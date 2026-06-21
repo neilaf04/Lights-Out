@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginTop="25dp">
+
+            <ImageView
+                android:src="@drawable/f1_car"
+                android:alpha="0.38"
+                android:scaleType="centerCrop"
+                android:translationX="55dp"
+                android:layout_alignParentEnd="true"
+                android:layout_width="240dp"
+                android:layout_height="170dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Lights"
+                        android:textColor="#FFFFFF"
+                        android:textSize="42sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="Out"
+                        android:textColor="#E10600"
+                        android:textSize="42sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <TextView
+                    android:text="F1 RACE COMPANION"
+                    android:textColor="#A5A5B5"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.08"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- keep the rest of your current Home XML below this -->
+
+        <LinearLayout
+            android:background="@drawable/hero_card"
+            android:padding="22dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="NEXT RACE"
+                android:textColor="#E10600"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/nextRaceText"
+                        android:text="Monaco Grand Prix"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/raceDateText"
+                        android:text="Circuit de Monaco • 2026-06-07"
+                        android:textColor="#B5B5C5"
+                        android:textSize="15sp"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/trackImage"
+                    android:src="@drawable/monaco_gp"
+                    android:scaleType="fitCenter"
+                    android:layout_width="120dp"
+                    android:layout_height="90dp" />
+            </LinearLayout>
+
+            <View
+                android:background="#33333A"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <TextView
+                android:id="@+id/daysLeftText"
+                android:text="8 days left"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:text="YOUR FAVORITES"
+            android:textColor="#E10600"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:background="@drawable/hero_card"
+            android:padding="18dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="115dp">
+
+            <ImageView
+                android:id="@+id/driverHelmet"
+                android:src="@drawable/redbull_healmet"
+                android:scaleType="fitCenter"
+                android:layout_width="85dp"
+                android:layout_height="85dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginStart="18dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="FAVORITE DRIVER"
+                    android:textColor="#B5B5C5"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/favDriverText"
+                    android:text="Max Verstappen"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/hero_card"
+            android:padding="18dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="115dp">
+
+            <ImageView
+                android:id="@+id/teamCar"
+                android:src="@drawable/redbull_car"
+                android:scaleType="fitCenter"
+                android:layout_width="105dp"
+                android:layout_height="85dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginStart="18dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="FAVORITE TEAM"
+                    android:textColor="#B5B5C5"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/favTeamText"
+                    android:text="Red Bull Racing"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/hero_card"
+            android:padding="18dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="22dp"
+            android:layout_width="match_parent"
+            android:layout_height="115dp">
+
+            <ImageView
+                android:id="@+id/favTrackImage"
+                android:src="@drawable/monaco_gp"
+                android:scaleType="fitCenter"
+                android:layout_width="95dp"
+                android:layout_height="80dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginStart="18dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="FAVORITE GRAND PRIX"
+                    android:textColor="#B5B5C5"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/favGpText"
+                    android:text="Monaco GP"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/addFavoritesButton"
+            android:text="ADD FAVORITES"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="#E10600"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="58dp" />
+
+        <Button
+            android:id="@+id/editFavoritesButton"
+            android:text="EDIT FAVORITES"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="#1A1A20"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="58dp" />
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:text="LOGOUT"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="#1A1A20"
+            android:layout_width="match_parent"
+            android:layout_height="58dp" />
+
+    </LinearLayout>
+</ScrollView>

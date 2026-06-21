@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="30dp">
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:background="@android:color/transparent"
+                android:src="@android:drawable/ic_media_previous"
+                android:tint="#FFFFFF" />
+
+            <TextView
+                android:text="EDIT FAVORITE"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:layout_marginStart="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:text="Choose what you want to update"
+            android:textColor="#B5B5C5"
+            android:textSize="15sp"
+            android:layout_marginBottom="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:orientation="horizontal"
+            android:background="@drawable/tab_background"
+            android:padding="2dp"
+            android:layout_marginBottom="22dp">
+
+            <Button
+                android:id="@+id/driverTab"
+                android:text="DRIVERS"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:backgroundTint="#E10600"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/teamTab"
+                android:text="TEAMS"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:backgroundTint="#15161D"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/gpTab"
+                android:text="GP"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:backgroundTint="#15161D"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/optionsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+</ScrollView>
